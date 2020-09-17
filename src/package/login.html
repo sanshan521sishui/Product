@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>去登录</title>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../../bist/js/login.min.js"></script>
     <link rel="stylesheet" href="../../bist/css/login.min.css">
 </head>
 <body>
@@ -19,11 +22,14 @@
         <div class="ban_r">
             <div class="ban_top">
                 <ul>
-                    <li><b>扫码登录</b></li>
-                    <li><b>账户登录</b></li>
+                    <li id="saoMa"><b>扫码登录</b></li>
+                    <li id="login"><b>账户登录</b></li>
                 </ul>
             </div>
-            <img src="../img/mob(3).jpg">
+            <p><input type="text" placeholder="请输入用户名" id="username"></p>
+            <p><input type="text" placeholder="请输入密码" id="pwd"></p>
+            <p><input type="button" value="登录" id="go"></p>
+            <img src="../img/mob(3).jpg" id="mob">
             <ul id="one">
                 <li>打开中酒网APP</li>
                 <li>扫描二维码</li>
@@ -34,8 +40,7 @@
                 <a href="#"><img src="../img/weixin2.png">微信</a><span>|</span>
                 <a href="./register.html">立即注册</a>
             </div>
-                
-        </div>
+       </div>
     </div>
     <div class="footer">
         Copyright&copy;2004-2005&nbsp;&nbsp;中酒网&nbsp;版权所有
